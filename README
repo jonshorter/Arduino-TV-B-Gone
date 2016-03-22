@@ -1,5 +1,9 @@
 This code is the TV-B-Gone library ported to run on the Arduino.
 
+TV-B-Gone for Arduino version 1.3, Mar 23 2016
+Fixed to compile on Arduino IDE 1.6.8 by Jonathan Shorter
+https://github.com/jonshorter/Arduino-TV-B-Gone
+
 This port is by Ken Shirriff.
 For details on the Arduino port, how to build it, and how to use it, see:
 http://www.arcfn.com/2010/11/improved-arduino-tv-b-gone.html
@@ -25,5 +29,3 @@ TV-B-Gone Firmware version 1.2
  Kevin Timmerman & Damien Good 7-Dec-07
 
  Distributed under Creative Commons 2.5 -- Attib & Share Alike
-
-
