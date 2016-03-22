@@ -1,4 +1,9 @@
 /*
+
+TV-B-Gone for Arduino version 1.3, Mar 23 2016
+Fixed to compile on Arduino IDE 1.6.8 by Jonathan Shorter
+https://github.com/jonshorter/Arduino-TV-B-Gone
+
 TV-B-Gone for Arduino version 1.2, Oct 23 2010
 Ported to Arduino by Ken Shirriff=
 http://www.arcfn.com/2009/12/tv-b-gone-for-arduino.html
@@ -75,9 +80,7 @@ This project transmits a bunch of TV POWER codes, one right after the other,
 This project is a good example of how to use the AVR chip timers.
  */
 
-extern PGM_P *NApowerCodes[] PROGMEM;
-extern PGM_P *EUpowerCodes[] PROGMEM;
-extern uint8_t num_NAcodes, num_EUcodes;
+#include "WORLDcodes.h"
 
 /* This function is the 'workhorse' of transmitting IR codes.
  Given the on and off times, it turns on the PWM output on and off
