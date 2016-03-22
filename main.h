@@ -1,8 +1,11 @@
 #include <avr/pgmspace.h>
 
+// TV-B-Gone for Arduino version 1.3, Mar 23 2016
+// Fixed to compile on Arduino IDE 1.6.8 by Jonathan Shorter
+// https://github.com/jonshorter/Arduino-TV-B-Gone
 
 // The TV-B-Gone for Arduino can use
-//   either the EU or the NA database of POWER CODES
+// either the EU or the NA database of POWER CODES
 // EU is for Europe, Middle East, Australia, New Zealand, and some countries in Africa and South America
 // NA is for North America, Asia, and the rest of the world not covered by EU
 
@@ -41,5 +44,5 @@ struct IrCode {
   uint8_t numpairs;
   uint8_t bitcompression;
   uint16_t const *times;
-  uint8_t const*codes;
+  uint8_t const*codes PROGMEM;
 };
